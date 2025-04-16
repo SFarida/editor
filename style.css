@@ -1,0 +1,167 @@
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+nav {
+    justify-content: space-between;
+    color: #aab1bb;
+    & ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        & .main {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+    & .publish {
+        color: #5993c7;
+        font-weight: 600;
+    }
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.sm-spacing {
+    padding: 0 0.5rem;
+}
+
+.hr-spacing {
+    padding: 1rem 0;
+}
+
+.box {
+    justify-content: center;
+    color: #aab1bb;
+    flex-direction: column;
+
+    & .head-box {
+        width: 60%;
+        padding: 0.5rem 0.5rem;
+        border: 1px solid #aab1bb;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+
+    & .p {
+        padding: 0.5rem 0.5rem;
+        color: #2f906e;
+        background-color: #ccf6e1;
+        border-radius: 5px;
+        /* margin: 0 0.5rem; */
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.head-line {
+    width: 61%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+
+    & h1 {
+        color: black;
+        font-weight: bold;
+    }
+
+    & p {
+        color: black;
+    }
+
+    & hr {
+        width: 100%;
+    }
+}
+
+#editor {
+    width: 60%;
+    min-height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#editor:focus {
+    outline: none;
+}
+
+.placeholder {
+    /* position: absolute; */
+    color: #aaa;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+}
+
+.flex-center-editor {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.editor-bottom-line {
+    width: 60%;
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    box-shadow: 1px -5px 12px black;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 18%;
+
+    & ul {
+        list-style-type: none;
+        align-items: center;
+        padding-left: 0;
+        & li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    & .highlight {
+        background-color: #d5d8dd;
+    }
+
+    & p {
+        color: #808a99;
+    }
+
+    & .one {
+        background-color: #508ac2;
+        border-radius: 5px;
+        color: white;
+        padding: 0.25rem 0.25rem;
+    }
+}
+
+.bottom-help {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding: 10px; */
+    text-align: end;
+
+    & span {
+        background-color: #f0f0f0;
+        padding: 0.5rem;
+    }
+
+    & img {
+        margin-bottom: -0.45rem;
+    }
+}
